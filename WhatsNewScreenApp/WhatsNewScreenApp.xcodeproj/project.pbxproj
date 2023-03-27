@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7475A3924045294C04F5CEDD /* Pods_WhatsNewScreenApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B558C954AB7AE4410409212E /* Pods_WhatsNewScreenApp.framework */; };
 		869CBAB529C1CDD800F40169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CBAB429C1CDD800F40169 /* AppDelegate.swift */; };
 		869CBAB729C1CDD800F40169 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CBAB629C1CDD800F40169 /* SceneDelegate.swift */; };
 		869CBAB929C1CDD800F40169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CBAB829C1CDD800F40169 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		652284FD4620A8AC134351EB /* Pods-WhatsNewScreenApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsNewScreenApp.release.xcconfig"; path = "Target Support Files/Pods-WhatsNewScreenApp/Pods-WhatsNewScreenApp.release.xcconfig"; sourceTree = "<group>"; };
 		869CBAB129C1CDD800F40169 /* WhatsNewScreenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsNewScreenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869CBAB429C1CDD800F40169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869CBAB629C1CDD800F40169 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		869CBABD29C1CDD900F40169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		869CBAC029C1CDD900F40169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		869CBAC229C1CDD900F40169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B558C954AB7AE4410409212E /* Pods_WhatsNewScreenApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsNewScreenApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB44FFE6016F262A56A69712 /* Pods-WhatsNewScreenApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsNewScreenApp.debug.xcconfig"; path = "Target Support Files/Pods-WhatsNewScreenApp/Pods-WhatsNewScreenApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7475A3924045294C04F5CEDD /* Pods_WhatsNewScreenApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1592AEFD7592EF4DED6CF484 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB44FFE6016F262A56A69712 /* Pods-WhatsNewScreenApp.debug.xcconfig */,
+				652284FD4620A8AC134351EB /* Pods-WhatsNewScreenApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		869CBAA829C1CDD800F40169 = {
 			isa = PBXGroup;
 			children = (
 				869CBAB329C1CDD800F40169 /* WhatsNewScreenApp */,
 				869CBAB229C1CDD800F40169 /* Products */,
+				1592AEFD7592EF4DED6CF484 /* Pods */,
+				8BC12876C7F14FC7DD25FA82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = WhatsNewScreenApp;
 			sourceTree = "<group>";
 		};
+		8BC12876C7F14FC7DD25FA82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B558C954AB7AE4410409212E /* Pods_WhatsNewScreenApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 869CBAC529C1CDD900F40169 /* Build configuration list for PBXNativeTarget "WhatsNewScreenApp" */;
 			buildPhases = (
+				53CA75258FF4A19FEB6311DD /* [CP] Check Pods Manifest.lock */,
 				869CBAAD29C1CDD800F40169 /* Sources */,
 				869CBAAE29C1CDD800F40169 /* Frameworks */,
 				869CBAAF29C1CDD800F40169 /* Resources */,
+				04A4D6BEAF6991ECE9AA2ACE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04A4D6BEAF6991ECE9AA2ACE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsNewScreenApp/Pods-WhatsNewScreenApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsNewScreenApp/Pods-WhatsNewScreenApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatsNewScreenApp/Pods-WhatsNewScreenApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53CA75258FF4A19FEB6311DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatsNewScreenApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		869CBAAD29C1CDD800F40169 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		869CBAC629C1CDD900F40169 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB44FFE6016F262A56A69712 /* Pods-WhatsNewScreenApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +380,7 @@
 		};
 		869CBAC729C1CDD900F40169 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652284FD4620A8AC134351EB /* Pods-WhatsNewScreenApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
